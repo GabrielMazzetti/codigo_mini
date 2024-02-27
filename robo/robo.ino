@@ -1,4 +1,4 @@
-#include "Robot.h"
+#include "robot.h"
 #include "Arduino.h"
 
 
@@ -11,6 +11,8 @@ void setup(){
    pinMode(FRONT_SENSOR_PIN, INPUT);
    pinMode(RIGHT_SENSOR_PIN, INPUT);
    pinMode(LEFT_SENSOR_PIN, INPUT);
+   pinMode(LEFT_ANALOGIC_SENSOR_PIN, INPUT);
+   pinMode(RIGHT_ANALOGIC_SENSOR_PIN, INPUT);
    pinMode(RIGHT_MOTOR_PWM_PIN, OUTPUT);
    pinMode(RIGHT_MOTOR_IN1_PIN, OUTPUT);
    pinMode(RIGHT_MOTOR_IN2_PIN, OUTPUT);

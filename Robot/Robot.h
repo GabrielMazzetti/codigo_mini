@@ -4,11 +4,12 @@
 #include <iostream>
 #include <string>
 
-#include "MicroStart.h"
-#include "DigitalSensors.h"
-#include "Motor.h"
-#include "Visao.h"
-#include "Strategy.h"
+#include "microStart.h"
+#include "digitalSensors.h"
+#include "analogSensors.h"
+#include "motor.h"
+#include "visao.h"
+#include "strategy.h"
 
 using namespace std;
 
@@ -17,6 +18,8 @@ using namespace std;
 #define FULL_LEFT_SENSOR_PIN 13
 #define LEFT_SENSOR_PIN 35
 #define RIGHT_SENSOR_PIN 34
+#define RIGHT_ANALOGIC_SENSOR_PIN 30
+#define LEFT_ANALOGIC_SENSOR_PIN 31
 
 #define RIGHT_MOTOR_PWM_PIN 4
 #define RIGHT_MOTOR_IN1_PIN 16
@@ -61,6 +64,8 @@ class Robot
     DigitalSensors full_right_sensor;
     DigitalSensors left_sensor;
     DigitalSensors right_sensor;
+    AnalogSensors left_analogic_sensor;
+    AnalogSensors right_analogic_sensor;
     MotorControl left_motor;
     MotorControl right_motor;
     Visao visao;

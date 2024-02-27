@@ -1,5 +1,5 @@
-#ifndef Motor_H
-#define Motor_H
+#ifndef MOTOR_H
+#define MOTOR_H
 
 #include <Arduino.h>
 

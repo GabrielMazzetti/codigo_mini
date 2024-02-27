@@ -1,5 +1,5 @@
-#ifndef DigitalSensors_H
-#define DigitalSensors_H
+#ifndef DIGITALSENSORS_H
+#define DIGITALSENSORS_H
 
 #include <iostream>
 #include <Arduino.h>

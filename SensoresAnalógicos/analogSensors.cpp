@@ -1,9 +1,9 @@
 #include <iostream>
-#include "AnalogSensors.h"
+#include "analogSensors.h"
 #include <Arduino.h>
 
 
-AnalogSensors::AnalogSensors(int pin){
+AnalogSensors::AnalogSensors(int pin1){
 
    this->pin1 = pin1;
 
@@ -12,7 +12,8 @@ AnalogSensors::AnalogSensors(int pin){
 int AnalogSensors::leitura(){
 
     analogRead(this->pin1);
-    int valorBranco; //Valor que será definido nos testes
+    int valorBranco;
+    valorBranco = 540; //valor não testado
 
    if(analogRead(this->pin1) >= valorBranco){
 

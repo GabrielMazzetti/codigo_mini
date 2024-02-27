@@ -1,5 +1,5 @@
 #include <iostream>
-#include "DigitalSensors.h"
+#include "digitalSensors.h"
 #include <Arduino.h>
 
 DigitalSensors::DigitalSensors(int pin){

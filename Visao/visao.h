@@ -1,7 +1,7 @@
-#ifndef Visao_H
-#define Visao_H
+#ifndef VISAO_H
+#define VISAO_H
 #include <Arduino.h>
-#include "DigitalSensors.h"
+#include "digitalSensors.h"
 namespace EnemyPosition{
 
 
@@ -24,7 +24,10 @@ class Visao{
       EnemyPosition::Pos enemy_position;
       EnemyPosition::Pos latest_enemy_position;
       void updateEnemyPosition(DigitalSensors &front_sensor, DigitalSensors &full_left_sensor, 
-      DigitalSensors &left_sensor, DigitalSensors &right_sensor, DigitalSensors&full_right_sensor);  
+      DigitalSensors &left_sensor, DigitalSensors &right_sensor, DigitalSensors&full_right_sensor);
+      int esquerda;
+      int direita;
+      int ambos;  
       
 };
 

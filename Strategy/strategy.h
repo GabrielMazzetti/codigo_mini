@@ -1,9 +1,9 @@
-#ifndef Strategy_H
-#define Strategy_H
+#ifndef STRATEGY_H
+#define STRATEGY_H
 
 #include <Arduino.h>
-#include "Visao.h"
-#include "Motor.h"
+#include "visao.h"
+#include "motor.h"
 
 class Move
 {
